@@ -1,0 +1,20 @@
+pour de de la com.
+
+    -home page, présentation de l'asso
+
+    -footer (par email, téléphone,)
+
+    -calendrier date (pour afficher les dates de l'asso(back office) + affiche de la date) séparer les dates du mois en cours et les lieux fixe de prêt de jeu. 
+ 
+    -page catalogue (dans le catalogue séparer les jeux de sociètés des jeux en bois ) (dans un second interface de réservatoin en ligne, si adhérent réservation possible par mail + id adhérent, sinon l'utilisateur doit renter en contact avec l'asso pour créer une carte d'adhésion. 
+  
+    -admin : -(ajout de fiche pour complèter le catalogue) 
+
+             - gestion des utilsateur  
+   
+contact :
+43 rue du Pavé 72 000 le Mans
+02 43 23 46 29
+Simon : 06 81 30 33 38
+nomad.jeux@gmail.com
+https://www.facebook.com/NomadJeux/
