@@ -1,4 +1,14 @@
 body {
-    margin: 0;
-    padding: 0;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between
+}
+.brdt {
+    border-top: 2px solid black;
+    margin: 0 200px;
+}
+h2 {
+    margin: 40px 0;
 }

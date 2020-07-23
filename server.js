@@ -2,13 +2,15 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-// const MongoStore = require('connect-mongo');
+const MongoStore = require('connect-mongo');
+const expressSession = require('express-session');
 const path = require('path');
 const handlebars = require('handlebars')
 const methodOverride = require('method-override');
 
 
 const app = express()
+const mongoStore = MongoStore(expressSession);
 const port = 3000
 const urlDB = "mongodb://localhost:27017/nomadejeux"
 
@@ -23,6 +25,19 @@ app.use(bodyParser.urlencoded({ extended: true }))
 // Express-static
 app.use(express.static('public')); 
 app.use('/assets', express.static('public'));
+
+// Express Session
+app.use(expressSession({
+    secret: 'securite',
+    name: 'cookie',
+    saveUninitialized: true,
+    resave: false,
+    store: new mongoStore(
+        { mongooseConnection: mongoose.connection }
+    ),
+    expires: new Date(Date.now() + (3600000))
+}));
+
 
 // Mongoose 
 mongoose.connect(urlDB, {

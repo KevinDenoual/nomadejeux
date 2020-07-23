@@ -18,3 +18,17 @@ contact :
 Simon : 06 81 30 33 38
 nomad.jeux@gmail.com
 https://www.facebook.com/NomadJeux/
+
+info card jeux de société/bois :
+-titre
+-description
+-age
+-nombre de joueur 
+-type
+-durée
+-difficulté
+-éditeur/illustrateur
+
+à faire : 
+ajouter logo camion à la place de home dans la navbar
+ajouter logo partenaire dans footer 
